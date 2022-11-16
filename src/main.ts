@@ -49,7 +49,7 @@ class luxtronik2-test extends utils.Adapter {
         super({
             dirname: __dirname.indexOf('node_modules') !== -1 ? undefined : __dirname + '/../',
             ...options,
-            name: 'luxtronik2-test',
+            name: 'luxtronik2',
         });
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
