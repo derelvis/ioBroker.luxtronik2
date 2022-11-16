@@ -160,7 +160,7 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "Luxtronik 2",
+        "title": "Luxtronik 2 Test",
         "titleLang": {
             "en": "Luxtronik 2",
             "de": "Luxtronik 2",
@@ -198,8 +198,8 @@
         "main": "build/main.js",
         "icon": "luxtronik2.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/UncleSamSwiss/ioBroker.luxtronik2/master/admin/luxtronik2.png",
-        "readme": "https://github.com/UncleSamSwiss/ioBroker.luxtronik2/blob/master/README.md",
+        "extIcon": "https://raw.githubusercontent.com/derelvis/ioBroker.luxtronik2/master/admin/luxtronik2.png",
+        "readme": "https://github.com/derelvis/ioBroker.luxtronik2/blob/master/README.md",
         "loglevel": "info",
         "mode": "daemon",
         "type": "climate-control",
