@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "luxtronik2",
-        "version": "0.4.2",
+        "version": "0.4.3",
         "news": {
+            "0.4.3": {
+                "en": "Added missing time table parameters",
+                "de": "Fehlende Zeit Tabellen hinzugefügt",
+                "ru": "Добавлены недостающие параметры MK1",
+                "pt": "Adicionados parâmetros MK1 ausentes",
+                "nl": "Ontbrekende MK1-parameters toegevoegd",
+                "fr": "Ajout des paramètres MK1 manquants",
+                "it": "Aggiunti parametri MK1 mancanti",
+                "es": "Se agregaron los parámetros MK1 faltantes",
+                "pl": "Dodano brakujące parametry MK1",
+                "zh-cn": "添加了缺失的 MK1 参数"
+            },
             "0.4.2": {
                 "en": "Filtering out empty time log entries\nUpdated to the latest luxtronik2 dependency",
                 "de": "Herausfiltern leerer Zeitprotokolleinträge\nAktualisiert auf die neueste luxtronik2-Abhängigkeit",
