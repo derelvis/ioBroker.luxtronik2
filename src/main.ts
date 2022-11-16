@@ -3,7 +3,7 @@
  */
 import * as utils from '@iobroker/adapter-core';
 import * as SentryNode from '@sentry/node';
-import luxtronik from 'luxtronik2';
+import luxtronik from 'luxtronik2-test';
 import WebSocket from 'ws';
 import { parseStringPromise } from 'xml2js';
 import {
@@ -22,7 +22,7 @@ const WATCHDOG_RETRIES = 3;
 
 type Sentry = typeof SentryNode;
 
-class Luxtronik2 extends utils.Adapter {
+class luxtronik2-test extends utils.Adapter {
     private webSocket?: WebSocket;
     private luxtronik?: any;
 
@@ -49,7 +49,7 @@ class Luxtronik2 extends utils.Adapter {
         super({
             dirname: __dirname.indexOf('node_modules') !== -1 ? undefined : __dirname + '/../',
             ...options,
-            name: 'luxtronik2',
+            name: 'luxtronik2-test',
         });
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
@@ -601,7 +601,7 @@ abstract class ItemHandler<T extends ContentSection | ContentItem> {
     constructor(
         public readonly id: string,
         protected readonly item: Readonly<T>,
-        protected readonly adapter: Luxtronik2,
+        protected readonly adapter: Luxtronik2-test,
     ) {}
 
     abstract extendObjectAsync(): Promise<void>;
@@ -801,8 +801,8 @@ class NumberHandler extends ItemHandler<NumberContentItem> {
 
 if (module.parent) {
     // Export the constructor in compact mode
-    module.exports = (options: Partial<utils.AdapterOptions> | undefined) => new Luxtronik2(options);
+    module.exports = (options: Partial<utils.AdapterOptions> | undefined) => new Luxtronik2-test(options);
 } else {
     // otherwise start the instance directly
-    (() => new Luxtronik2())();
+    (() => new Luxtronik2-test())();
 }

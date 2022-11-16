@@ -1,6 +1,6 @@
 {
     "common": {
-        "name": "luxtronik2",
+        "name": "luxtronik2-test",
         "version": "0.4.3",
         "news": {
             "0.4.3": {
@@ -222,7 +222,7 @@
             "sentry": {
                 "dsn": "https://781afb355b0947a0af84bb9e704d79fe@sentry.iobroker.net/137",
                 "pathWhitelist": [
-                    "luxtronik2"
+                    "luxtronik2-test"
                 ]
             }
         }
