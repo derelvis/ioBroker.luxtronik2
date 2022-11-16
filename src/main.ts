@@ -22,7 +22,7 @@ const WATCHDOG_RETRIES = 3;
 
 type Sentry = typeof SentryNode;
 
-class luxtronik2-test extends utils.Adapter {
+class luxtronik2 extends utils.Adapter {
     private webSocket?: WebSocket;
     private luxtronik?: any;
 
