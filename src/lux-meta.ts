@@ -286,17 +286,16 @@ export const luxMeta: Record<string, Record<string, MetaInfo | undefined>> = {
         // currently we ignore all timer tables
         heatingOperationTimerTableSelected: { role: 'value', type: 'number' },
         heatingOperationTimerTableSelectedString: { role: 'text', type: 'string' },
-        heatingOperationTimerTableWeek: {
-        type: "state",
-            common: {
-                name: "heating Operation Timer Table Week",
-                type: "object",
-                role: "value",
-                read: true,
-                write: true,
-                desc: "heating Operation Timer Table Week",
-                },
-        },
+        heatingOperationTimerTableWeek:  {
+  		"type": "state",
+  			"common": {
+    			"name": "heating Operation Timer Table Week",
+    			"type": "json",
+    			"role": "value",
+    			"read": true,
+    			"write": true,
+    			"desc": "heating Operation Timer Table Week",
+  		},
         heatingOperationTimerTable52MonFri: undefined,
         heatingOperationTimerTable52SatSun: undefined,
         heatingOperationTimerTableDaySunday: undefined,
@@ -308,7 +307,16 @@ export const luxMeta: Record<string, Record<string, MetaInfo | undefined>> = {
         heatingOperationTimerTableDaySaturday: undefined,
         hotWaterOperationTimerTableSelected: { role: 'value', type: 'number' },
         hotWaterOperationTimerTableSelectedString: { role: 'text', type: 'string' },
-        hotWaterOperationTimerTableWeek: { role: 'value', type: 'object' },
+        hotWaterOperationTimerTableWeek: {
+  		"type": "state",
+  			"common": {
+    			"name": "hotWater Operation Timer Table Week",
+    			"type": "string",
+    			"role": "json",
+    			"read": true,
+    			"write": true,
+    			"desc": "hotWater Operation Timer Table Week",
+  		},
         hotWaterOperationTimerTable52MonFri: undefined,
         hotWaterOperationTimerTable52SatSun: undefined,
         hotWaterOperationTimerTableDaySunday: undefined,
