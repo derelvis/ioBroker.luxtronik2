@@ -1,6 +1,6 @@
 {
     "common": {
-        "name": "luxtronik2-test",
+        "name": "luxtronik2",
         "version": "0.4.3",
         "news": {
             "0.4.3": {
@@ -160,10 +160,10 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "Luxtronik 2 Test",
+        "title": "Luxtronik 2",
         "titleLang": {
-            "en": "Luxtronik 2 Test",
-            "de": "Luxtronik 2 Test",
+            "en": "Luxtronik 2",
+            "de": "Luxtronik 2",
             "ru": "Люкстроник 2",
             "pt": "Luxtronik 2",
             "nl": "Luxtronik 2",
@@ -222,7 +222,7 @@
             "sentry": {
                 "dsn": "https://781afb355b0947a0af84bb9e704d79fe@sentry.iobroker.net/137",
                 "pathWhitelist": [
-                    "luxtronik2-test"
+                    "luxtronik2"
                 ]
             }
         }

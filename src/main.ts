@@ -3,7 +3,7 @@
  */
 import * as utils from '@iobroker/adapter-core';
 import * as SentryNode from '@sentry/node';
-import luxtronik from 'luxtronik2-test';
+import luxtronik from 'luxtronik2';
 import WebSocket from 'ws';
 import { parseStringPromise } from 'xml2js';
 import {
@@ -22,7 +22,7 @@ const WATCHDOG_RETRIES = 3;
 
 type Sentry = typeof SentryNode;
 
-class luxtronik2-test extends utils.Adapter {
+class luxtronik2 extends utils.Adapter {
     private webSocket?: WebSocket;
     private luxtronik?: any;
 
@@ -601,7 +601,7 @@ abstract class ItemHandler<T extends ContentSection | ContentItem> {
     constructor(
         public readonly id: string,
         protected readonly item: Readonly<T>,
-        protected readonly adapter: Luxtronik2-test,
+        protected readonly adapter: luxtronik2,
     ) {}
 
     abstract extendObjectAsync(): Promise<void>;
@@ -801,8 +801,8 @@ class NumberHandler extends ItemHandler<NumberContentItem> {
 
 if (module.parent) {
     // Export the constructor in compact mode
-    module.exports = (options: Partial<utils.AdapterOptions> | undefined) => new Luxtronik2-test(options);
+    module.exports = (options: Partial<utils.AdapterOptions> | undefined) => new luxtronik2(options);
 } else {
     // otherwise start the instance directly
-    (() => new Luxtronik2-test())();
+    (() => new luxtronik2())();
 }

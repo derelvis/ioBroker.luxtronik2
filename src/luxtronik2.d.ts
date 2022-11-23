@@ -1,1 +1,1 @@
-declare module 'luxtronik2-test';
+declare module 'luxtronik2';
