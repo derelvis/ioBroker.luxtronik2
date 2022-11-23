@@ -1,8 +1,11 @@
 {
-  "name": "@derelvis/iobroker.luxtronik2",
+  "name": "iobroker.luxtronik2",
   "version": "0.4.3",
   "description": "Connects to Luxtronik 2 heatpump controllers over LAN and WebSocket",
-  "author": "UncleSamSwiss <samuel.weibel@gmail.com>",
+  "author": {
+    "name": "UncleSamSwiss",
+    "email": "samuel.weibel@gmail.com"
+  },
   "homepage": "https://github.com/UncleSamSwiss/ioBroker.luxtronik2",
   "license": "Apache-2.0",
   "keywords": [
@@ -12,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UncleSamSwiss/ioBroker.luxtronik2.git"
+    "url": "https://github.com/UncleSamSwiss/ioBroker.luxtronik2"
   },
   "engines": {
     "node": ">=12.0"
@@ -21,7 +24,6 @@
     "@iobroker/adapter-core": "^2.5.1",
     "@sentry/node": "^6.16.1",
     "luxtronik2": "^2.5.1",
-    "package.json": "^2.0.1",
     "ws": "^8.4.2",
     "xml2js": "^0.4.23"
   },
@@ -76,7 +78,5 @@
   "bugs": {
     "url": "https://github.com/UncleSamSwiss/ioBroker.luxtronik2/issues"
   },
-  "directories": {
-    "test": "test"
-  }
+  "readmeFilename": "README.md"
 }
