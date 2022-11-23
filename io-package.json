@@ -234,8 +234,8 @@
         "password"
     ],
     "native": {
-        "host": "",
-        "port": 8214,
+        "host": "10.0.0.251",
+        "port": 0,
         "luxPort": 8888,
         "password": "",
         "refreshInterval": 5
