@@ -322,7 +322,21 @@ exports.luxMeta = {
         hotWaterOperationTimerTableDaySaturday: undefined,
         hotWaterCircPumpTimerTableSelected: { role: 'value', type: 'number' },
         hotWaterCircPumpTimerTableSelectedString: { role: 'text', type: 'string' },
-        hotWaterCircPumpTimerTableWeek: { role: 'value', type: 'json' },
+        hotWaterCircPumpTimerTableWeek: [
+			{
+				_id: 'hotWaterCircPumpTimerTableWeek',
+				type: 'state',
+				common: {
+					name: 'hotWaterCircPumpTimerTableWeek Json',
+					type: 'string',
+					role: 'value',
+					read: true,
+					write: true,
+					desc: 'set hotWaterCircPumpTimerTableWeek with a json',
+				},
+				native: {},
+			},
+    	],
         hotWaterCircPumpTimerTable52MonFri: undefined,
         hotWaterCircPumpTimerTable52SatSun: undefined,
         hotWaterCircPumpTimerTableDaySunday: undefined,
