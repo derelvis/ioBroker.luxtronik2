@@ -279,7 +279,7 @@ exports.luxMeta = {
         heatingOperationTimerTableSelected: { role: 'value', type: 'number' },
         heatingOperationTimerTableSelectedString: { role: 'text', type: 'string' },
         heatingOperationTimerTableWeek: {
-  		"type": "state",
+  		"type": "object",
   			"common": {
     			"name": "heating Operation Timer Table Week",
     			"type": "json",
@@ -301,7 +301,7 @@ exports.luxMeta = {
         hotWaterOperationTimerTableSelected: { role: 'value', type: 'number' },
         hotWaterOperationTimerTableSelectedString: { role: 'text', type: 'string' },
         hotWaterOperationTimerTableWeek: {
-  		"type": "state",
+  		"type": "json",
   			"common": {
     			"name": "hotWater Operation Timer Table Week",
     			"type": "string",

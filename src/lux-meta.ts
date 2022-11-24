@@ -287,7 +287,7 @@ export const luxMeta: Record<string, Record<string, MetaInfo | undefined>> = {
         heatingOperationTimerTableSelected: { role: 'value', type: 'number' },
         heatingOperationTimerTableSelectedString: { role: 'text', type: 'string' },
         heatingOperationTimerTableWeek:  {
-  		"type": "state",
+  		"type": "object",
   			"common": {
     			"name": "heating Operation Timer Table Week",
     			"type": "json",
@@ -309,7 +309,7 @@ export const luxMeta: Record<string, Record<string, MetaInfo | undefined>> = {
         hotWaterOperationTimerTableSelected: { role: 'value', type: 'number' },
         hotWaterOperationTimerTableSelectedString: { role: 'text', type: 'string' },
         hotWaterOperationTimerTableWeek: {
-  		"type": "state",
+  		"type": "json",
   			"common": {
     			"name": "hotWater Operation Timer Table Week",
     			"type": "string",
