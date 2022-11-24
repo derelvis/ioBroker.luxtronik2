@@ -305,7 +305,7 @@ exports.luxMeta = {
   			common: {
     			name: 'hotWater Operation Timer Table Week',
     			type: 'string',
-    			role: 'value'',
+    			role: 'value',
     			read: true,
     			write: true,
     			desc: 'hotWater Operation Timer Table Week',
